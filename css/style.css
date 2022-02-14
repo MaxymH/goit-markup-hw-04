@@ -150,7 +150,8 @@ img{
 .auth-nav .contact:hover {
   color: var(--accent-color);
 }
-.auth-nav .contact:hover .contact-icon{
+.auth-nav .contact:hover .contact-icon,
+.auth-nav .contact:focus .contact-icon{
   fill: var(--accent-color);
 }
 .auth-nav .email{
@@ -315,9 +316,7 @@ border: 1px solid #EEEEEE;
   text-align: center;
 }
 .team .text-items{
-  padding-bottom: 16px;
   padding-top: 30px;
-  border: 1px solid #EEEEEE;
 }
 
 .team .icon{
@@ -328,7 +327,7 @@ border: 1px solid #EEEEEE;
 .team .list-icon{
 display: flex;
 justify-content: center;
-margin: 0px 32px 30px 32px;
+margin: 16px 32px 30px 32px;
 }
 .team .link{
   display: flex;
@@ -371,8 +370,9 @@ margin-bottom: 50px;
   display: flex;
 }
 .customers .bg{
-}
-.customers .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
 height: 92px;
   border: 1px solid #AFB1B8;
@@ -385,15 +385,15 @@ border-radius: 4px;
 .customers .icon{
   width: 106px;
   height: 60px;
-  margin: 16px 32px 16px 32px;
+  /* margin: 16px 32px 16px 32px; */
   fill: #AFB1B8;
 }
-.customers .item:hover,
-.customers .item:focus{
+.customers .bg:hover,
+.customers .bg:focus{
   border-color: var(--accent-color);
 }
-.customers .item:hover .icon,
-.customers .item:focus .icon{
+.customers .bg:hover .icon,
+.customers .bg:focus .icon{
   fill: var(--accent-color);
 }
 /* footer */
