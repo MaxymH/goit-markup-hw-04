@@ -150,18 +150,17 @@ img{
 .auth-nav .contact:hover {
   color: var(--accent-color);
 }
-.auth-nav .icon-nav:hover,
-.auth-nav.icon-nav:focus{
-color: var(--accent-color);
+.auth-nav .contact:hover .contact-icon{
+  fill: var(--accent-color);
 }
 .auth-nav .email{
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.auth-nav .contact-icon:hover{
+/* .auth-nav .contact-icon:hover{
   fill: var(--accent-color);
-}
+} */
 .auth-nav .tell{
   
   width: 10px;
@@ -219,11 +218,14 @@ color: var(--accent-color);
   background: #F5F4FA;
 border-radius: 4px;
 margin-bottom: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
  .feature .icon{
   width: 70px;
   height: 70px;
-  margin: 25px 100px 25px 100px;}
+  }
 
 .feature .feature-title {
 
@@ -287,6 +289,7 @@ margin-bottom: 30px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 border: 1px solid #EEEEEE;
+ background-color: var(--primeri-bg-color)
 }
 .team .images{
   margin-top: 0;
@@ -330,7 +333,7 @@ margin: 0px 32px 30px 32px;
 .team .link{
   display: flex;
   border-radius: 50%;
-  background-color: none;
+  background-color: var(--primeri-bg-color);
   width: 44px;
   height: 44px;
   align-items: center;
@@ -368,7 +371,9 @@ margin-bottom: 50px;
   display: flex;
 }
 .customers .bg{
-width: 170px;
+}
+.customers .item{
+  width: 170px;
 height: 92px;
   border: 1px solid #AFB1B8;
 box-sizing: border-box;
@@ -383,8 +388,12 @@ border-radius: 4px;
   margin: 16px 32px 16px 32px;
   fill: #AFB1B8;
 }
-.customers .icon:focus,
-.customers .icon:hover{
+.customers .item:hover,
+.customers .item:focus{
+  border-color: var(--accent-color);
+}
+.customers .item:hover .icon,
+.customers .item:focus .icon{
   fill: var(--accent-color);
 }
 /* footer */
@@ -443,6 +452,9 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primeri-bg-color);
 margin-bottom: 20px;
+}
+.footer .social-network .items + .items{
+  margin-left: 10px;
 }
 .footer .adress{
   display: flex;
@@ -548,7 +560,7 @@ margin-bottom: 30px;
   border: 1px solid #EEEEEE;
   box-sizing: border-box;
 }
-.menu .text-items:hover{
+.menu .list-items:hover {
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
 }
 
